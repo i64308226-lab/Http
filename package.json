@@ -1,8 +1,9 @@
 {
-  "name": "vercel-http-proxy",
+  "name": "vercel-http-vless-proxy",
   "version": "1.0.0",
   "main": "api/proxy.js",
   "dependencies": {
-    "http-proxy": "^1.18.1"
+    "http-proxy": "^1.18.1",
+    "socks-proxy-agent": "^8.0.0"
   }
 }
