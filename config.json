@@ -17,7 +17,10 @@
       "tls": {
         "enabled": true,
         "server_name": "www.microsoft.com",
-        "utls": { "enabled": true, "fingerprint": "chrome" },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
         "reality": {
           "enabled": true,
           "public_key": "rvJys5mM4q2eBc5EOtHXAZ8QWAGZH2f4eUM1KmI2SXg",
@@ -25,5 +28,13 @@
         }
       }
     }
-  ]
+  ],
+  "route": {
+    "rules": [
+      {
+        "inbound": "http-in",
+        "outbound": "vless-out"
+      }
+    ]
+  }
 }
